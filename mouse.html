@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GOAP + Utility AI Experiment</title>
+    <style>
+        table, th, td {
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="500" height="500" id="game">Please Enable Javascript!</canvas>
+    <p>This is an experiment with the Goal Oriented Action Planning AI and Utility AI.</p>
+    <div class="brain">
+        Fullness: <input type="range" id="fullness" min="0" max="100" onchange="setVal('fullness');"><br>
+        Energy: <input type="range" id="energy" min="0" max="100" onchange="setVal('energy');"><br>
+    </div>
+    <table style="width: 100%; max-width:350px" id="goals">
+        <tr>
+            <th>Goal</th>
+            <th>Score</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <script src="src/ai.js"></script>
+    <script src="src/class.js"></script>
+    <script src="src/mouse.js"></script>
+</body>
+</html>
